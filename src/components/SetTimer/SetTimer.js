@@ -1,5 +1,6 @@
 
 function SetTimer (props) {
+    
     return(
         <div className='timer-container'>
         <h1>{props.title}</h1>

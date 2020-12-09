@@ -9,10 +9,20 @@ const Header = (props) => (
             </Link>
             <nav>
                 <ul className="NavLinks">
-                    <li><Link to="/logout">Logout</Link></li>
-                    <li><Link to="/dashboard">Dashboard</Link></li>
-                    <li><Link to="/signup">Signup</Link></li>
-                    <li><Link to="/login">Login</Link></li>
+                    {
+                        props.user ?
+                        <>
+                            <li><Link to="" onClick={props.handleLogout}>Logout</Link></li>
+                            <li><Link to="/dashboard">Dashboard</Link></li>
+                        </>
+                        :
+                        <>
+                            <li><Link to="/signup">Signup</Link></li>
+                            <li><Link to="/login">Login</Link></li>
+                        </>
+
+                    }
+                    
                     
                 </ul>
             </nav>
