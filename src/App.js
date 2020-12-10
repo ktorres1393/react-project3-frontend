@@ -3,11 +3,13 @@ import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
+
 import Dashboard from './pages/Dashboard';
-import HomePage from './pages/HomePage';
+import HomePage from './pages/HomePage/HomePage';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage'
 import { getUser, logout } from './services/userService'
+
 
 import { Route, Switch, withRouter, Redirect } from 'react-router-dom'
 
@@ -18,6 +20,7 @@ function App(props) {
   /**  Component State   */
 
   const [ userState, setUserState ] = useState({ user: getUser() });
+  
 
   /*   helper functions   */
 
@@ -53,6 +56,7 @@ function App(props) {
       <SignupPage handleSignupOrLogin={handleSignupOrLogin} />
       }/>
       
+
       </Switch>
       <Footer />
         
