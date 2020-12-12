@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom'
-import getTodos from '../../services/todoService/todoService'
+import {getTodos} from '../../services/todoService/todoService'
 
 
  const TodoList = (props) => {

@@ -2,7 +2,7 @@ import React from 'react';
 
 import {CreateTodo} from '../components/CreateTodo/CreateTodo';
 import TodoList from '../components/TodoList/TodoList';
-import { getUser } from '../services/userService';
+
 
 
 

@@ -16,9 +16,26 @@ function getTodos(userId) {
 
 }
 
+ function createTodo(todo) {
+    return fetch(BASE_URL + '/save', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'Application/json'
+        },
+       body: JSON.stringify(todo)
+    })
+        // throw new Error('Bad Credentials');
+   
+
+}
+
 
 // copy the same thing as getTodos, change name to saveTodos, POST method, include body: JSON.stringify(user) , make sure that function takes in title and userId, base url /save
 
 
 
-export default getTodos
+export {
+    getTodos,
+    createTodo
+} 
+    

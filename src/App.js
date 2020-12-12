@@ -11,6 +11,7 @@ import SignupPage from './pages/SignupPage'
 import { getUser, logout } from './services/userService'
 import TodoList from './components/TodoList/TodoList';
 import EditTodo from './components/EditTodo/EditTodo'
+import {CreateTodo} from './components/CreateTodo/CreateTodo'
 
 
 import { Route, Switch, withRouter, Redirect } from 'react-router-dom'
@@ -59,6 +60,7 @@ function App(props) {
       }/>
       <Route exact path='/dashboard' component={TodoList} />
      <Route exact path='/dashboard/edit/:id' component={EditTodo} />
+     <Route path="/dashboard/save" component={CreateTodo}/>
       
 
       </Switch>
