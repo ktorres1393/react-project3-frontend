@@ -9,6 +9,8 @@ import HomePage from './pages/HomePage/HomePage';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage'
 import { getUser, logout } from './services/userService'
+import TodoList from './components/TodoList/TodoList';
+import EditTodo from './components/EditTodo/EditTodo'
 
 
 import { Route, Switch, withRouter, Redirect } from 'react-router-dom'
@@ -55,6 +57,8 @@ function App(props) {
       <Route exact path="/signup" render={(props) =>
       <SignupPage handleSignupOrLogin={handleSignupOrLogin} />
       }/>
+      <Route exact path='/dashboard' component={TodoList} />
+     <Route exact path='/dashboard/edit/:id' component={EditTodo} />
       
 
       </Switch>

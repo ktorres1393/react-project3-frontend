@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom'
 
 
-export const TodoList = () => {
+ const TodoList = () => {
   const [items, setItems] = useState([])
 
  useEffect(() => {
@@ -16,7 +16,7 @@ export const TodoList = () => {
   return (
     <div className="container">
       <div className="mt-3">
-        <h3>Todo List</h3>
+        <h3>Todo List</h3> 
         <table className="table table-striped mt-3">
           <thead>
             <tr>
@@ -27,12 +27,12 @@ export const TodoList = () => {
           <tbody>
             {
               items.map(todo => (
-                <tr key={todo._id}>
+                <tr key={todo.id}>
                   <td>
                     {todo.text}
                   </td>
                   <td>
-                    <Link to={`/edit/${todo._id}`}>Edit</Link>
+                    <Link to={`dashboard/edit/${todo.id}`}>Edit</Link>
                   </td>
                 </tr>
               ))
@@ -44,4 +44,4 @@ export const TodoList = () => {
   );
 };
 
-   
+   export default TodoList;
