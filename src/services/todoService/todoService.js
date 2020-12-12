@@ -1,21 +1,24 @@
-// export const getTodos = () => fetch("http://localhost:3000/").then(res => res.json())
 
-// export const createTodo = (todo) => fetch("http://localhost:3000/create", {
-//   method: "POST",
-//   headers: {
-//     "Accept": "application/json",
-//     "Content-Type": "application/json"
-//   },
-//   body: JSON.stringify(todo)
-// })  
+const BASE_URL = 'http://localhost:3001/api/todos'
 
-// export const updateTodo = (todo, id) => fetch(`http://localhost:3000/${id}`, {
-//   method: "POST",
-//   headers: {
-//     "Accept": "application/json",
-//     "Content-Type": "application/json"
-//   },
-//   body: JSON.stringify(todo)
-// })  
 
-// export const getTodo = (id) => fetch(`http://localhost:3000/${id}`).then(res => res.json())
+function getTodos(userId) {
+    return fetch(BASE_URL + `/${userId}`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'Application/json'
+        },
+       
+    }).then(response => {
+        if(response.ok) return response.json();
+        // throw new Error('Bad Credentials');
+    })
+
+}
+
+
+// copy the same thing as getTodos, change name to saveTodos, POST method, include body: JSON.stringify(user) , make sure that function takes in title and userId, base url /save
+
+
+
+export default getTodos

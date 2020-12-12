@@ -9,7 +9,7 @@ export const CreateTodo = () => {
 
     const onSubmit = (data) => {
        alert(JSON.stringify(data));
-       
+       //use 'save' function from todoservice to save todo
     }
 
     return(
@@ -19,3 +19,5 @@ export const CreateTodo = () => {
         </div>
     )
 }
+
+//

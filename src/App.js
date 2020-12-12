@@ -47,7 +47,7 @@ function App(props) {
       }/>
       <Route exact path="/dashboard" render={(props) =>
       getUser()?
-        <Dashboard />
+        <Dashboard user={getUser()} />
         :
         <Redirect to="/login"/>
       }/>

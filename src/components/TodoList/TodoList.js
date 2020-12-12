@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom'
+import getTodos from '../../services/todoService/todoService'
 
 
- const TodoList = () => {
+ const TodoList = (props) => {
   const [items, setItems] = useState([])
 
  useEffect(() => {
-        setItems([
-            {text: 'yes', id:0},
-            {text: 'no', id:1},
-            {text: 'maybe', id:2}
-        ])
+     getTodos(props.user._id)
+     .then((results)=> {
+        setItems(results)
+     })
+        
     }, [])
 
   return (
@@ -27,12 +28,12 @@ import { Link } from 'react-router-dom'
           <tbody>
             {
               items.map(todo => (
-                <tr key={todo.id}>
+                <tr key={todo._id}>
                   <td>
-                    {todo.text}
+                    {todo.title}
                   </td>
                   <td>
-                    <Link to={`dashboard/edit/${todo.id}`}>Edit</Link>
+                    <Link to={`dashboard/edit/${todo._id}`}>Edit</Link>
                   </td>
                 </tr>
               ))
