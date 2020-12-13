@@ -23,11 +23,51 @@ function getTodos(userId) {
             'Content-Type': 'Application/json'
         },
        body: JSON.stringify(todo)
+       
     })
-        // throw new Error('Bad Credentials');
+
    
 
 }
+
+function updateTodo(todo){
+    console.log(todo)
+    return fetch(BASE_URL + '/edit', {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'Application/json'
+        },
+       body: JSON.stringify(todo)
+       
+    })
+}
+
+function getTodosById(todoId) {
+    return fetch(BASE_URL + `/id/${todoId}`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'Application/json'
+        },
+       
+    }).then(response => {
+        if(response.ok) return response.json();
+        // throw new Error('Bad Credentials');
+    })
+
+}
+
+function deleteTodo(todo){
+    console.log(todo)
+    return fetch(BASE_URL + '/delete', {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'Application/json'
+        },
+       body: JSON.stringify(todo)
+       
+    })
+}
+
 
 
 // copy the same thing as getTodos, change name to saveTodos, POST method, include body: JSON.stringify(user) , make sure that function takes in title and userId, base url /save
@@ -36,6 +76,9 @@ function getTodos(userId) {
 
 export {
     getTodos,
-    createTodo
+    createTodo,
+    updateTodo,
+    getTodosById,
+    deleteTodo
 } 
     

@@ -60,7 +60,7 @@ function App(props) {
       }/>
       <Route exact path='/dashboard' component={TodoList} />
      <Route exact path='/dashboard/edit/:id' component={EditTodo} />
-     <Route path="/dashboard/save" component={CreateTodo}/>
+     
       
 
       </Switch>

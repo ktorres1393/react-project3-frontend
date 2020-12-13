@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom'
 import {getTodos} from '../../services/todoService/todoService'
+import {deleteTodo} from '../../services/todoService/todoService'
 
 
  const TodoList = (props) => {
@@ -13,6 +14,14 @@ import {getTodos} from '../../services/todoService/todoService'
      })
         
     }, [])
+
+  const deleteNote = async (id) => {
+
+      await deleteTodo({
+        todoId: id
+      })
+      window.location.reload(false)
+    }
 
   return (
     <div className="container">
@@ -34,6 +43,9 @@ import {getTodos} from '../../services/todoService/todoService'
                   </td>
                   <td>
                     <Link to={`dashboard/edit/${todo._id}`}>Edit</Link>
+                  </td>
+                  <td>
+                    <button onClick={()=>deleteNote(todo._id)}>delete</button>
                   </td>
                 </tr>
               ))

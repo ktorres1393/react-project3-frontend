@@ -4,12 +4,16 @@ import {useHistory} from 'react-router-dom'
 import {TodoForm} from '../TodoForm/TodoForm'
 import {createTodo} from '../../services/todoService/todoService'
 
-export const CreateTodo = () => {
+export const CreateTodo = (props) => {
     const history = useHistory()
     
     const onSubmit = async (data) => {
-      await createTodo(data)
-      history.push("/dashboard")
+        console.log(data);
+        const Todo = {title: data.text, userId: props.user._id}
+        console.log(Todo)
+      await createTodo(Todo)
+      window.location.reload(false)
+    //   history.push("/dashboard")
     };
   
     return (
