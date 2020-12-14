@@ -2,7 +2,6 @@
     
     align-items: center;
     font-size: 60px;
-    font-style: oblique;
     font-weight: bold;
     color: #ffffff;
     top: 100px;
@@ -15,10 +14,25 @@
 
 }
 
-ul{
-    font-size: 20px;
+p{
+    font-size: 40px;
     color: grey;
-    font-family: 'Robot', cursive;
+    font-family: 'Teko', sans-serif;
+    text-shadow: 2px 2px #ffffff; 
+    align-items: center;
+    padding-left: 20px;
+}
+
+ ol{
+    font-size: 25px;
+    color: grey;
+    font-family: 'Teko', sans-serif;
     list-style-type: none;
+    text-shadow: 2px 3px #ffffff;
+    display: flex;
+    flex-direction: column;
+
+   
+    
 }
 

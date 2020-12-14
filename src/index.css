@@ -41,7 +41,7 @@ code {
 
 }
 
-.actions-wrapper button{
+.actions-wrapper {
   background-color: transparent;
   padding: 15px ;
   margin: 10px;

@@ -1,5 +1,5 @@
 
-const BASE_URL = 'http://localhost:3001/api/todos'
+const BASE_URL = 'https://study-buddy-backend-curiosity.herokuapp.com/api/todos'
 
 
 function getTodos(userId) {

@@ -26,7 +26,7 @@ import {deleteTodo} from '../../services/todoService/todoService'
   return (
     <div className="container">
       <div className="mt-3">
-        <h3>Todo List</h3> 
+        <h3>Task List</h3> 
         <table className="table table-striped mt-3">
           <thead>
             <tr>

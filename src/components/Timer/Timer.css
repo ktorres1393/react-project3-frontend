@@ -22,10 +22,27 @@
     padding: 2rem;
     border-radius: 2rem;
     background-color: #cceeff;
-    /* border: solid grey; */
-    box-shadow: 5px 10px #888888
-    
+    box-shadow: 10px 10px rgba(0,0,0,0.2); 
+    /* box-shadow: 5px 10px #888888; */
+    /* width:350px;
+   height:120px;
+   background:#ECEFF1;
+   box-shadow: 10px 10px rgba(0,0,0,0.2);  */
 }
+
+/* .timer-container::after{
+    width:100px;
+    height:100px;
+    top:-220px;
+    left:50px;
+}
+
+.timer-container::before{
+    width:180px;
+    height:180px;
+    top: -70px;
+    left:130px;
+} */
 
 .label-container {
     display: flex;
@@ -37,7 +54,7 @@
 button {
     font-size: 1rem;
     cursor: pointer;
-    background-color: pink;
+    background-color: #fee1e8;
     border-radius: 24px;
    
 }
@@ -51,6 +68,9 @@ button {
     margin: 1rem;
     padding: 1rem 1.5rem;
     color: white;
-    background: black;
+    background: grey;
     border-radius: 1rem;
+    
+     
+    
 }
