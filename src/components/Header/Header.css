@@ -2,10 +2,15 @@
     background-color: grey;
     padding-left: 10px;
     padding-right: 10px;
-    height: 110px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    opacity: 0.9;
+}
+
+h1{
+    font-size: 80px;
 }
 
 .Header a {
@@ -22,10 +27,7 @@
 }
 
 img {
-    border: solid red;
-    background-color: transparent;
-    padding-top: 40px;
     
-   
-
+    padding-top: 12px;
+    
 }
