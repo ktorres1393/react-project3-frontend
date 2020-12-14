@@ -6,7 +6,7 @@ const Header = (props) => (
   
         <header className="Header">
             <Link to="/">
-            <img src='/images/justlogo.png' alt='logo'/>
+            <img src='/images/bluelogo.png' alt='logo'/>
             </Link>
             <h1>Study Buddy</h1>
             <nav>

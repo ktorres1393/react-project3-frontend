@@ -11,6 +11,8 @@
 
 h1{
     font-size: 80px;
+    font-family: 'Titan One', cursive;
+    text-shadow: 2px 2px #ccddff;
 }
 
 .Header a {
@@ -27,7 +29,9 @@ h1{
 }
 
 img {
+    height: 150px;
+    padding-top: 10px;
+    padding-right: 60px;
     
-    padding-top: 12px;
     
 }

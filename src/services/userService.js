@@ -1,5 +1,5 @@
 import { getUserFromToken, setToken, removeToken } from './tokenService'
-const BASE_URL = 'https://study-buddy-backend-curiosity.herokuapp.com/api/users'
+const BASE_URL = 'http://localhost:3001/api/users'
 
 function signup(user) {
     return fetch(BASE_URL + '/signup', {

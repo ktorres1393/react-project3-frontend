@@ -5,7 +5,8 @@
     margin: 2rem;
     padding: 2rem;
     border-radius: 2rem;
-    background-color: #ccffff;
+    background-color: #cceeff;
+    box-shadow: 5px 10px #888888;
 }
 
 .button-container {

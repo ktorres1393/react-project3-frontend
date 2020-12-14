@@ -15,3 +15,10 @@
 
 }
 
+ul{
+    font-size: 20px;
+    color: grey;
+    font-family: 'Robot', cursive;
+    list-style-type: none;
+}
+

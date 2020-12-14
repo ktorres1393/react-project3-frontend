@@ -1,5 +1,5 @@
 .timer {
-    border: solid red;
+    
     flex-grow: 1;
    display: flex;
    flex-direction: column;
@@ -21,13 +21,17 @@
     margin: 2rem;
     padding: 2rem;
     border-radius: 2rem;
-    background-color: #ccffff;
+    background-color: #cceeff;
+    /* border: solid grey; */
+    box-shadow: 5px 10px #888888
+    
 }
 
 .label-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    
 }
 
 button {
