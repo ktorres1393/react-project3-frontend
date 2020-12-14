@@ -3,8 +3,15 @@
   display: flex;
   flex-direction: column;
   background-color: #e6ccff;
+  background-image: url('https://i.pinimg.com/originals/70/d4/be/70d4be5253646e7db0d4c2bef0a0c163.jpg');
+  /* position: fixed;   */
+  background-size: cover;
+  background-position: center;
+   background-size: 2500px 1300px;
+  background-repeat: no-repeat;
   color: #ffffff;
-  /* background-image: url('./images/1311165.jpg') ; */
+  
+  /* background-image: url('https://blog.online.colostate.edu/wp-content/uploads/2016/02/Goals-BlogImage.jpg') ; */
   
 }
 
