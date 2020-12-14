@@ -1,8 +1,8 @@
 .Header {
-    background-color: black;
+    background-color: grey;
     padding-left: 10px;
     padding-right: 10px;
-    height: 100px;
+    height: 110px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,4 +19,13 @@
 }
 .NavLinks li {
     margin-right: 20px;
+}
+
+img {
+    border: solid red;
+    background-color: transparent;
+    padding-top: 40px;
+    
+   
+
 }

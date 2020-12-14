@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
 import './Header.css'
 
+
 const Header = (props) => (
   
         <header className="Header">
             <Link to="/">
-            <h1>My Project</h1>
+            <img src='/images/finallogo.png' alt='logo'/>
             </Link>
             <nav>
                 <ul className="NavLinks">
