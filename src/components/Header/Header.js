@@ -6,9 +6,9 @@ const Header = (props) => (
   
         <header className="Header">
             <Link to="/">
-            <img src='/images/bluelogo.png' alt='logo'/>
-            </Link>
+            {/* <img src='/images/bluelogo.png' alt='logo'/> */}
             <h1>Study Buddy</h1>
+            </Link>
             <nav>
                 <ul className="NavLinks">
                     {

@@ -5,7 +5,8 @@
     height: 200px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
     /* opacity: 0.9; */
     background: rgba(204, 204, 204, 0.6);
 }
@@ -14,6 +15,8 @@ h1{
     font-size: 75px;
     font-family: 'Titan One', cursive;
     text-shadow: 2px 2px #ccddff;
+    align-items: center;
+    padding-left: 250px;
 }
 
 .Header a {
