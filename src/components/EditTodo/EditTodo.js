@@ -21,6 +21,7 @@ const  EditTodo = (props) => {
         const Todo = {todoTitle: data.text, todoId: props.match.params.id}
         console.log(Todo)
       await updateTodo(Todo)
+      window.location.reload(false)
       }
 
       return todo ? (
