@@ -1,6 +1,7 @@
 import React from 'react'
 import { useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import './TodoForm.css'
 
  export const TodoForm = ({todo, onSubmit}) => {
     const {register, handleSubmit} = useForm({ defaultValues: {text: todo ? todo.text : ""} })

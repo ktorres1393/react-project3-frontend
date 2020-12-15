@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Link } from 'react-router-dom'
-import {getTodos} from '../../services/todoService/todoService'
-import {deleteTodo} from '../../services/todoService/todoService'
+import { Link } from 'react-router-dom';
+import {getTodos} from '../../services/todoService/todoService';
+import {deleteTodo} from '../../services/todoService/todoService';
+import './TodoList.css'
 
 
  const TodoList = (props) => {
@@ -26,7 +27,7 @@ import {deleteTodo} from '../../services/todoService/todoService'
   return (
     <div className="container">
       <div className="mt-3">
-        <h3>Task List</h3> 
+        <h3 className="title">Task List</h3> 
         <table className="table table-striped mt-3">
           <thead>
             <tr>

@@ -2,7 +2,8 @@ import React from 'react';
 import {useHistory} from 'react-router-dom'
 
 import {TodoForm} from '../TodoForm/TodoForm'
-import {createTodo} from '../../services/todoService/todoService'
+import {createTodo} from '../../services/todoService/todoService';
+import './CreateTodo.css'
 
 export const CreateTodo = (props) => {
     const history = useHistory()
