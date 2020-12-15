@@ -46,7 +46,7 @@ import './TodoList.css'
                     <Link to={`dashboard/edit/${todo._id}`}>Edit</Link>
                   </td>
                   <td>
-                    <button onClick={()=>deleteNote(todo._id)}>delete</button>
+                    <button class="fas fa-trash-alt" onClick={()=>deleteNote(todo._id)}>delete</button>
                   </td>
                 </tr>
               ))

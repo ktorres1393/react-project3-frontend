@@ -1,3 +1,50 @@
+# Study Buddy
+A web application where one can use a pomodoro timer to maximize productivity and track progress when studying.
+
+## Technologies Used
+- HTML5
+- CSS3
+- React.js
+- jQuery
+- Node.js
+- Express.js
+- Mongoose MongoDB
+- Bootstrap
+- Google Fonts
+
+## Screenshots
+
+### Home Page
+<img src='public/images/Homepage.png'>
+<img src='public/images/realhomepage.png'>
+
+
+### Login page
+<img src= 'public/images/login.png' >
+<img src= 'public/images/reallogin.png'>
+
+### Signup page
+<img src= 'public/images/signup.png'>
+<img src= 'public/images/realsignup.png'>
+
+### Dashboard Page
+<img src= 'public/images/dashboard.png'>
+<img src='public/images/realtimer.png'>
+
+### Tasklist Page
+<img src= 'public/images/taskpage.png'>
+<img src='public/images/realtasklist.png'>
+
+
+
+## Getting Started
+[Click Here](https://study-buddy-react-kass.herokuapp.com/) to see the deployed app!
+
+## Future Enchancments
+- Add sound to notify when Timer is switching from study session to break session
+- Update to modern styling
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
